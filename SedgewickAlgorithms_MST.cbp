@@ -32,6 +32,7 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="README.md" />
 		<Unit filename="dfs.c">
 			<Option compilerVar="CC" />
 		</Unit>
