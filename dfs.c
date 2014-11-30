@@ -137,6 +137,7 @@ boolean find_a_cycle(FILE *output, adj_list *adjacency_list)
     for (int i = graph_index - 1; i >= 0; i--) {
         fprintf(output, "%5d", graph_cycle[i]);
     }
+    stack_destroy(stack_inst);
     return FALSE;
 }
 
