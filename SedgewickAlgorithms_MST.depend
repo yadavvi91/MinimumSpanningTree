@@ -1,13 +1,13 @@
 # depslib dependency file v1.0
-1417244466 source:/home/vyadav/C/Workspace/SedgewickAlgorithms_MST/graph.c
+1417329182 source:/home/vyadav/C/Workspace/SedgewickAlgorithms_MST/graph.c
 	<stdio.h>
 	<stdlib.h>
 	<assert.h>
 	"graph.h"
 
-1417103927 /home/vyadav/C/Workspace/SedgewickAlgorithms_MST/graph.h
+1417328718 /home/vyadav/C/Workspace/SedgewickAlgorithms_MST/graph.h
 
-1417327470 source:/home/vyadav/C/Workspace/SedgewickAlgorithms_MST/main.c
+1417371194 source:/home/vyadav/C/Workspace/SedgewickAlgorithms_MST/main.c
 	<stdio.h>
 	<stdlib.h>
 	<limits.h>
@@ -16,20 +16,38 @@
 	"stack.h"
 	"dfs.h"
 
-1417244760 source:/home/vyadav/C/Workspace/SedgewickAlgorithms_MST/stack.c
+1417329345 source:/home/vyadav/C/Workspace/SedgewickAlgorithms_MST/stack.c
 	<stdio.h>
 	<stdlib.h>
 	<limits.h>
 	"stack.h"
 
-1417241629 /home/vyadav/C/Workspace/SedgewickAlgorithms_MST/stack.h
+1417329253 /home/vyadav/C/Workspace/SedgewickAlgorithms_MST/stack.h
 
-1417327336 source:/home/vyadav/C/Workspace/SedgewickAlgorithms_MST/dfs.c
+1417329763 source:/home/vyadav/C/Workspace/SedgewickAlgorithms_MST/dfs.c
 	<stdio.h>
 	<stdlib.h>
 	<limits.h>
 	"graph.h"
 	"stack.h"
 
-1417244494 /home/vyadav/C/Workspace/SedgewickAlgorithms_MST/dfs.h
+1417328060 /home/vyadav/C/Workspace/SedgewickAlgorithms_MST/dfs.h
+
+1417371132 source:/home/vyadav/C/Workspace/SedgewickAlgorithms_MST/dijkstra.c
+	<stdio.h>
+	<stdlib.h>
+	<limits.h>
+	"min_binary_heap.h"
+	"graph.h"
+	"dijkstra.h"
+
+1417105604 /home/vyadav/C/Workspace/SedgewickAlgorithms_MST/min_binary_heap.h
+
+1417353236 /home/vyadav/C/Workspace/SedgewickAlgorithms_MST/dijkstra.h
+
+1417363330 source:/home/vyadav/C/Workspace/SedgewickAlgorithms_MST/min_binary_heap.c
+	<stdio.h>
+	<stdlib.h>
+	<limits.h>
+	"min_binary_heap.h"
 

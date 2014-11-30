@@ -11,7 +11,7 @@
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
-				<Option parameters="tinyEWD.txt output.txt" />
+				<Option parameters="tinyEWG.txt output.txt" />
 				<Compiler>
 					<Add option="-g" />
 				</Compiler>
@@ -37,6 +37,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="dfs.h" />
+		<Unit filename="dijkstra.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="dijkstra.h" />
 		<Unit filename="graph.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -44,12 +48,17 @@
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="min_binary_heap.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="min_binary_heap.h" />
 		<Unit filename="output.txt" />
 		<Unit filename="stack.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="stack.h" />
 		<Unit filename="tinyEWD.txt" />
+		<Unit filename="tinyEWG.txt" />
 		<Extensions>
 			<code_completion />
 			<envvars />

@@ -93,6 +93,10 @@ int main(int argc, char* argv[])
 
     perform_dfs(output, adjacency_list);
     find_a_cycle(output, adjacency_list);
+
+    // print_shortest_path(adjacency_list);
+    minimum_spanning_tree(adjacency_list);
+
     graph_destroy(adjacency_list);
     return EXIT_SUCCESS;
 }
