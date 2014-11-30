@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['add_5fedge',['add_edge',['../graph_8h.html#afe0440d50d85b3485cef3ed1d28543df',1,'add_edge(adj_list *adjacency_list, int from, int to, float weight):&#160;graph.c'],['../graph_8c.html#afe0440d50d85b3485cef3ed1d28543df',1,'add_edge(adj_list *adjacency_list, int from, int to, float weight):&#160;graph.c']]]
+  ['find_5fa_5fcycle',['find_a_cycle',['../dfs_8c.html#a2164f0c8c425c15a07d80ecab73bf479',1,'find_a_cycle(FILE *output, adj_list *adjacency_list):&#160;dfs.c'],['../dfs_8h.html#a2164f0c8c425c15a07d80ecab73bf479',1,'find_a_cycle(FILE *output, adj_list *adjacency_list):&#160;dfs.c']]]
 ];

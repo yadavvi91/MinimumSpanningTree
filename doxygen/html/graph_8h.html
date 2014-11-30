@@ -131,12 +131,15 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:abee9fe1e461cc1d3a1a6d3ebf3352f58"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structadj__list.html">adj_list</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph_8h.html#abee9fe1e461cc1d3a1a6d3ebf3352f58">create_graph</a> (int no_vert)</td></tr>
-<tr class="memdesc:abee9fe1e461cc1d3a1a6d3ebf3352f58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a graph - an adjacency list - with given number of vertices.  <a href="#abee9fe1e461cc1d3a1a6d3ebf3352f58">More...</a><br /></td></tr>
-<tr class="separator:abee9fe1e461cc1d3a1a6d3ebf3352f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe0440d50d85b3485cef3ed1d28543df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph_8h.html#afe0440d50d85b3485cef3ed1d28543df">add_edge</a> (<a class="el" href="structadj__list.html">adj_list</a> *adjacency_list, int from, int to, float weight)</td></tr>
-<tr class="memdesc:afe0440d50d85b3485cef3ed1d28543df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an edge to the given Adjacency List.  <a href="#afe0440d50d85b3485cef3ed1d28543df">More...</a><br /></td></tr>
-<tr class="separator:afe0440d50d85b3485cef3ed1d28543df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae749e48cf2618e966908f2a6fa6c7c00"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structadj__list.html">adj_list</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph_8h.html#ae749e48cf2618e966908f2a6fa6c7c00">graph_create</a> (int no_vert)</td></tr>
+<tr class="memdesc:ae749e48cf2618e966908f2a6fa6c7c00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a graph - an adjacency list - with given number of vertices.  <a href="#ae749e48cf2618e966908f2a6fa6c7c00">More...</a><br /></td></tr>
+<tr class="separator:ae749e48cf2618e966908f2a6fa6c7c00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a633bff6dfd21ca9092cca10d380157e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph_8h.html#a633bff6dfd21ca9092cca10d380157e1">graph_add_edge</a> (<a class="el" href="structadj__list.html">adj_list</a> *adjacency_list, int from, int to, float weight)</td></tr>
+<tr class="memdesc:a633bff6dfd21ca9092cca10d380157e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an edge to the given Adjacency List.  <a href="#a633bff6dfd21ca9092cca10d380157e1">More...</a><br /></td></tr>
+<tr class="separator:a633bff6dfd21ca9092cca10d380157e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1eb3aeee6b926757a175493c42a6fd9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph_8h.html#a1eb3aeee6b926757a175493c42a6fd9c">graph_destroy</a> (<a class="el" href="structadj__list.html">adj_list</a> *adjacency_list)</td></tr>
+<tr class="memdesc:a1eb3aeee6b926757a175493c42a6fd9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deallocate all the space of the graph.  <a href="#a1eb3aeee6b926757a175493c42a6fd9c">More...</a><br /></td></tr>
+<tr class="separator:a1eb3aeee6b926757a175493c42a6fd9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a class="anchor" id="a73d74bc558cd46e965573cb6ee0f883d"></a>
@@ -176,12 +179,12 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="afe0440d50d85b3485cef3ed1d28543df"></a>
+<a class="anchor" id="a633bff6dfd21ca9092cca10d380157e1"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void add_edge </td>
+          <td class="memname">void graph_add_edge </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structadj__list.html">adj_list</a> *&#160;</td>
           <td class="paramname"><em>adjacency_list</em>, </td>
@@ -215,7 +218,7 @@ Functions</h2></td></tr>
 <p>Add an edge to the given Adjacency List. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">adjacency_list</td><td>adj_list* Adjacency List of the graph. </td></tr>
+    <tr><td class="paramname">adjacency_list</td><td>adj_list* - Adjacency List of the graph. </td></tr>
     <tr><td class="paramname">from</td><td>int - from vertex. </td></tr>
     <tr><td class="paramname">to</td><td>int - to vertex. </td></tr>
     <tr><td class="paramname">weight</td><td>float - weight of the edge. </td></tr>
@@ -226,12 +229,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="abee9fe1e461cc1d3a1a6d3ebf3352f58"></a>
+<a class="anchor" id="ae749e48cf2618e966908f2a6fa6c7c00"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structadj__list.html">adj_list</a>* create_graph </td>
+          <td class="memname"><a class="el" href="structadj__list.html">adj_list</a>* graph_create </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>no_vert</em></td><td>)</td>
@@ -251,13 +254,38 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a1eb3aeee6b926757a175493c42a6fd9c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graph_destroy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structadj__list.html">adj_list</a> *&#160;</td>
+          <td class="paramname"><em>adjacency_list</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Deallocate all the space of the graph. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">adjacency_list</td><td>adj_list* - Adjacency List of the graph. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="graph_8h.html">graph.h</a></li>
-    <li class="footer">Generated on Sat Nov 29 2014 12:40:16 for SedgewickAlgorithms_MST by
+    <li class="footer">Generated on Sun Nov 30 2014 12:10:10 for SedgewickAlgorithms_MST by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

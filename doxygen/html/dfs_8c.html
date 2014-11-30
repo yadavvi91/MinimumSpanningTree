@@ -114,24 +114,34 @@ $(document).ready(function(){initNavTree('dfs_8c.html','');});
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a5afb2a8325c0e86954592b7fc987caf8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dfs_8c.html#a5afb2a8325c0e86954592b7fc987caf8">perform_dfs</a> (<a class="el" href="structadj__list.html">adj_list</a> *adjacency_list)</td></tr>
-<tr class="memdesc:a5afb2a8325c0e86954592b7fc987caf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a Depth-First Traversal of the given adjacency list.  <a href="#a5afb2a8325c0e86954592b7fc987caf8">More...</a><br /></td></tr>
-<tr class="separator:a5afb2a8325c0e86954592b7fc987caf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a398fc6b7e749c0e32dc49c85c2a7def4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stack_8h.html#a621c38f1f10a1c565d897e3178b16d6e">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dfs_8c.html#a398fc6b7e749c0e32dc49c85c2a7def4">find_a_cycle</a> (<a class="el" href="structadj__list.html">adj_list</a> *adjacency_list)</td></tr>
-<tr class="memdesc:a398fc6b7e749c0e32dc49c85c2a7def4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find if there are any cycles in the graph and print them.  <a href="#a398fc6b7e749c0e32dc49c85c2a7def4">More...</a><br /></td></tr>
-<tr class="separator:a398fc6b7e749c0e32dc49c85c2a7def4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a260c37c1c5683a8527ff99ea0279c056"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dfs_8c.html#a260c37c1c5683a8527ff99ea0279c056">perform_dfs</a> (FILE *output, <a class="el" href="structadj__list.html">adj_list</a> *adjacency_list)</td></tr>
+<tr class="memdesc:a260c37c1c5683a8527ff99ea0279c056"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a Depth-First Traversal of the given adjacency list.  <a href="#a260c37c1c5683a8527ff99ea0279c056">More...</a><br /></td></tr>
+<tr class="separator:a260c37c1c5683a8527ff99ea0279c056"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2164f0c8c425c15a07d80ecab73bf479"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stack_8h.html#a621c38f1f10a1c565d897e3178b16d6e">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dfs_8c.html#a2164f0c8c425c15a07d80ecab73bf479">find_a_cycle</a> (FILE *output, <a class="el" href="structadj__list.html">adj_list</a> *adjacency_list)</td></tr>
+<tr class="memdesc:a2164f0c8c425c15a07d80ecab73bf479"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find if there are any cycles in the graph and print them.  <a href="#a2164f0c8c425c15a07d80ecab73bf479">More...</a><br /></td></tr>
+<tr class="separator:a2164f0c8c425c15a07d80ecab73bf479"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a398fc6b7e749c0e32dc49c85c2a7def4"></a>
+<a class="anchor" id="a2164f0c8c425c15a07d80ecab73bf479"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="stack_8h.html#a621c38f1f10a1c565d897e3178b16d6e">boolean</a> find_a_cycle </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structadj__list.html">adj_list</a> *&#160;</td>
-          <td class="paramname"><em>adjacency_list</em></td><td>)</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>output</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structadj__list.html">adj_list</a> *&#160;</td>
+          <td class="paramname"><em>adjacency_list</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -147,16 +157,26 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a5afb2a8325c0e86954592b7fc987caf8"></a>
+<a class="anchor" id="a260c37c1c5683a8527ff99ea0279c056"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void perform_dfs </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structadj__list.html">adj_list</a> *&#160;</td>
-          <td class="paramname"><em>adjacency_list</em></td><td>)</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>output</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structadj__list.html">adj_list</a> *&#160;</td>
+          <td class="paramname"><em>adjacency_list</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -178,7 +198,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dfs_8c.html">dfs.c</a></li>
-    <li class="footer">Generated on Sat Nov 29 2014 12:40:15 for SedgewickAlgorithms_MST by
+    <li class="footer">Generated on Sun Nov 30 2014 12:10:10 for SedgewickAlgorithms_MST by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

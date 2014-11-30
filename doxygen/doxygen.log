@@ -1,0 +1,8 @@
+/home/vyadav/C/Workspace/SedgewickAlgorithms_MST/dfs.c:69: warning: The following parameters of find_a_cycle(FILE *output, adj_list *adjacency_list) are not documented:
+  parameter 'output'
+/home/vyadav/C/Workspace/SedgewickAlgorithms_MST/dfs.c:8: warning: The following parameters of perform_dfs(FILE *output, adj_list *adjacency_list) are not documented:
+  parameter 'output'
+/home/vyadav/C/Workspace/SedgewickAlgorithms_MST/dfs.c:69: warning: The following parameters of find_a_cycle(FILE *output, adj_list *adjacency_list) are not documented:
+  parameter 'output'
+/home/vyadav/C/Workspace/SedgewickAlgorithms_MST/dfs.c:8: warning: The following parameters of perform_dfs(FILE *output, adj_list *adjacency_list) are not documented:
+  parameter 'output'

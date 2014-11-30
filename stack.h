@@ -19,11 +19,10 @@ typedef int boolean;
 #define FALSE 0
 #define NMAX 1000
 
-stack* stack_init();
+stack* stack_create();
 void stack_push(stack *stack_inst, int value);
 int stack_pop(stack *stack_inst);
-void stack_destroy(stack *stack_inst);
 boolean stack_is_empty(stack *stack_inst);
-
+void stack_destroy(stack *stack_inst);
 
 #endif // STACK_H_INCLUDED

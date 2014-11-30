@@ -8,7 +8,7 @@
  *
  * \return stack* - A new instance of stack.
  */
-stack *stack_init()
+stack *stack_create()
 {
     stack *stack_inst = (stack *) malloc(sizeof(stack));
     stack_inst->size = 0;
@@ -45,6 +45,17 @@ int stack_pop(stack *stack_inst)
     return value;
 }
 
+/** \brief Check if the stack is empty.
+ *
+ * \param stack_inst stack* - Stack instance.
+ * \return boolean - TRUE if stack is empty, FALSE otherwise.
+ *
+ */
+boolean stack_is_empty(stack *stack_inst)
+{
+    return (stack_inst->top == NULL && stack_inst->size == 0) ? TRUE : FALSE;
+}
+
 /** \brief Free all the memory allocated for the stack.
  *
  * \param stack_inst stack* - Stack instance.
@@ -62,17 +73,6 @@ void stack_destroy(stack *stack_inst)
     }
 
     free(stack_inst);
-}
-
-/** \brief Check if the stack is empty.
- *
- * \param stack_inst stack* - Stack instance.
- * \return boolean - TRUE if stack is empty, FALSE otherwise.
- *
- */
-boolean stack_is_empty(stack *stack_inst)
-{
-    return (stack_inst->top == NULL && stack_inst->size == 0) ? TRUE : FALSE;
 }
 
 

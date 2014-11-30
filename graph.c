@@ -9,7 +9,7 @@
  * \param no_vert int - Number of vertices.
  * \return adj_list* - An Adjacency List of edges.
  */
-adj_list *create_graph(int no_vert)
+adj_list *graph_create(int no_vert)
 {
     bag *bag_of_vertex;
 
@@ -32,14 +32,13 @@ adj_list *create_graph(int no_vert)
 
 /** \brief Add an edge to the given Adjacency List
  *
- * \param adjacency_list adj_list* Adjacency List of the graph.
+ * \param adjacency_list adj_list* - Adjacency List of the graph.
  * \param from int - from vertex.
  * \param to int - to vertex.
  * \param weight float - weight of the edge.
  * \return void
- *
  */
-void add_edge(adj_list *adjacency_list, int from, int to, float weight)
+void graph_add_edge(adj_list *adjacency_list, int from, int to, float weight)
 {
     node *new_node, *prev_node;
     bag *bag_of_vertex;
@@ -68,7 +67,30 @@ void add_edge(adj_list *adjacency_list, int from, int to, float weight)
     prev_node->next = new_node;
 }
 
+/** \brief Deallocate all the space of the graph.
+ *
+ * \param adjacency_list adj_list* - Adjacency List of the graph.
+ * \return void
+ */
+void graph_destroy(adj_list *adjacency_list)
+{
+    bag *bag_of_vertex;
+    node *node_of_vertex, *node_of_vertex_temp;
 
+    for (int i = 0; i < adjacency_list->no_vert; i++) {
+        bag_of_vertex = adjacency_list->bags[i];
+        if (!bag_of_vertex)                 continue;
+
+        node_of_vertex = bag_of_vertex->first;
+        while (node_of_vertex) {
+            node_of_vertex_temp = node_of_vertex;
+            node_of_vertex = node_of_vertex->next;
+            free(node_of_vertex_temp);
+        }
+        free(bag_of_vertex);
+    }
+    free(adjacency_list);
+}
 
 
 

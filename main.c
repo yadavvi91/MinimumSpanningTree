@@ -58,7 +58,7 @@ int main(int argc, char* argv[])
         exit(EXIT_FAILURE);
     }
 
-    adj_list *adjacency_list = create_graph(no_vertices);
+    adj_list *adjacency_list = graph_create(no_vertices);
 
     int size_of_lines = 3;
     char *val;
@@ -82,7 +82,7 @@ int main(int argc, char* argv[])
                 }
                 val = strtok(NULL, " \t\n\r");
             }
-            add_edge(adjacency_list, from, to, weight);
+            graph_add_edge(adjacency_list, from, to, weight);
         } else if (feof(input)) {
             fprintf(output, "End Of File reached");
         } else if (ferror(input)) {
@@ -93,6 +93,7 @@ int main(int argc, char* argv[])
 
     perform_dfs(output, adjacency_list);
     find_a_cycle(output, adjacency_list);
+    graph_destroy(adjacency_list);
     return EXIT_SUCCESS;
 }
 

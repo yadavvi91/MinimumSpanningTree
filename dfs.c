@@ -14,7 +14,7 @@ void perform_dfs(FILE *output, adj_list *adjacency_list)
 {
     int vertex = 0, no_of_vertex_left;
     boolean marked[NMAX] = {FALSE};
-    stack *stack_inst = stack_init();
+    stack *stack_inst = stack_create();
     int connected_graph[NMAX][2];
     int disjoint_set = 0;
     int stack_value, connected_graph_index = 0;
@@ -73,7 +73,7 @@ void perform_dfs(FILE *output, adj_list *adjacency_list)
  */
 boolean find_a_cycle(FILE *output, adj_list *adjacency_list)
 {
-    stack *stack_inst = stack_init();
+    stack *stack_inst = stack_create();
     int no_of_vertices = adjacency_list->no_vert;
     int vertex;
 

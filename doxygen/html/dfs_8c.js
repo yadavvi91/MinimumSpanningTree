@@ -1,5 +1,5 @@
 var dfs_8c =
 [
-    [ "find_a_cycle", "dfs_8c.html#a398fc6b7e749c0e32dc49c85c2a7def4", null ],
-    [ "perform_dfs", "dfs_8c.html#a5afb2a8325c0e86954592b7fc987caf8", null ]
+    [ "find_a_cycle", "dfs_8c.html#a2164f0c8c425c15a07d80ecab73bf479", null ],
+    [ "perform_dfs", "dfs_8c.html#a260c37c1c5683a8527ff99ea0279c056", null ]
 ];

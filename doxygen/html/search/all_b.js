@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['value',['value',['../structstack__node.html#a01b161c91989e025629d826825cbccea',1,'stack_node']]]
+  ['weight',['weight',['../structnode.html#abcb77d7f5a0c9ef0c5f198a8ab808bf1',1,'node']]]
 ];

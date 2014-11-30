@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['main',['main',['../main_8c.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main.c']]]
+  ['perform_5fdfs',['perform_dfs',['../dfs_8c.html#a260c37c1c5683a8527ff99ea0279c056',1,'perform_dfs(FILE *output, adj_list *adjacency_list):&#160;dfs.c'],['../dfs_8h.html#a260c37c1c5683a8527ff99ea0279c056',1,'perform_dfs(FILE *output, adj_list *adjacency_list):&#160;dfs.c']]]
 ];

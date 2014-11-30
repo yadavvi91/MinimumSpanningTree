@@ -21,7 +21,8 @@ typedef struct adj_list
     bag **bags;
 } adj_list;
 
-adj_list *create_graph(int no_vert);
-void add_edge(adj_list *adjacency_list, int from, int to, float weight);
+adj_list *graph_create(int no_vert);
+void graph_add_edge(adj_list *adjacency_list, int from, int to, float weight);
+void graph_destroy(adj_list *adjacency_list);
 
 #endif // GRAPH_H_INCLUDED
