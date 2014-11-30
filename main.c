@@ -40,9 +40,9 @@ int main(int argc, char* argv[])
             exit(EXIT_FAILURE);
         }
     } else if (feof(input)) {
-        fprintf(stdout, "End Of File reached");
+        fprintf(output, "End Of File reached");
     } else if (ferror(input)) {
-        fprintf(stdout, "Some error while reading");
+        fprintf(output, "Some error while reading");
         exit(EXIT_FAILURE);
     }
 
@@ -52,9 +52,9 @@ int main(int argc, char* argv[])
             exit(EXIT_FAILURE);
         }
     } else if (feof(input)) {
-        fprintf(stdout, "End Of File reached");
+        fprintf(output, "End Of File reached");
     } else if (ferror(input)) {
-        fprintf(stdout, "Some error while reading");
+        fprintf(output, "Some error while reading");
         exit(EXIT_FAILURE);
     }
 
@@ -84,15 +84,15 @@ int main(int argc, char* argv[])
             }
             add_edge(adjacency_list, from, to, weight);
         } else if (feof(input)) {
-            fprintf(stdout, "End Of File reached");
+            fprintf(output, "End Of File reached");
         } else if (ferror(input)) {
-            fprintf(stdout, "Some error while reading");
+            fprintf(output, "Some error while reading");
             exit(EXIT_FAILURE);
         }
     }
 
-    // perform_dfs(adjacency_list);
-    find_a_cycle(adjacency_list);
+    perform_dfs(output, adjacency_list);
+    find_a_cycle(output, adjacency_list);
     return EXIT_SUCCESS;
 }
 

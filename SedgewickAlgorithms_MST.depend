@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1417113856 source:/home/vyadav/C/Workspace/SedgewickAlgorithms_MST/graph.c
+1417244466 source:/home/vyadav/C/Workspace/SedgewickAlgorithms_MST/graph.c
 	<stdio.h>
 	<stdlib.h>
 	<assert.h>
@@ -7,7 +7,7 @@
 
 1417103927 /home/vyadav/C/Workspace/SedgewickAlgorithms_MST/graph.h
 
-1417242831 source:/home/vyadav/C/Workspace/SedgewickAlgorithms_MST/main.c
+1417327470 source:/home/vyadav/C/Workspace/SedgewickAlgorithms_MST/main.c
 	<stdio.h>
 	<stdlib.h>
 	<limits.h>
@@ -16,7 +16,7 @@
 	"stack.h"
 	"dfs.h"
 
-1417197057 source:/home/vyadav/C/Workspace/SedgewickAlgorithms_MST/stack.c
+1417244760 source:/home/vyadav/C/Workspace/SedgewickAlgorithms_MST/stack.c
 	<stdio.h>
 	<stdlib.h>
 	<limits.h>
@@ -24,12 +24,12 @@
 
 1417241629 /home/vyadav/C/Workspace/SedgewickAlgorithms_MST/stack.h
 
-1417242725 source:/home/vyadav/C/Workspace/SedgewickAlgorithms_MST/dfs.c
+1417327336 source:/home/vyadav/C/Workspace/SedgewickAlgorithms_MST/dfs.c
 	<stdio.h>
 	<stdlib.h>
 	<limits.h>
 	"graph.h"
 	"stack.h"
 
-1417242104 /home/vyadav/C/Workspace/SedgewickAlgorithms_MST/dfs.h
+1417244494 /home/vyadav/C/Workspace/SedgewickAlgorithms_MST/dfs.h
 

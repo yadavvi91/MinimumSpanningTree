@@ -1,0 +1,13 @@
+    0    2    7    3    6    4    5    1
+The sets are: (In reverse order)
+    0    0
+    2    0
+    7    0
+    3    0
+    6    0
+    4    0
+    5    0
+    1    0
+
+The cycle is:
+    2    7    3    6    2
