@@ -7,7 +7,7 @@
 
 1417328718 /home/vyadav/C/Workspace/SedgewickAlgorithms_MST/graph.h
 
-1417371194 source:/home/vyadav/C/Workspace/SedgewickAlgorithms_MST/main.c
+1417444234 source:/home/vyadav/C/Workspace/SedgewickAlgorithms_MST/main.c
 	<stdio.h>
 	<stdlib.h>
 	<limits.h>
@@ -15,6 +15,8 @@
 	"graph.h"
 	"stack.h"
 	"dfs.h"
+	"dijkstra.h"
+	"queue.h"
 
 1417329345 source:/home/vyadav/C/Workspace/SedgewickAlgorithms_MST/stack.c
 	<stdio.h>
@@ -33,21 +35,30 @@
 
 1417328060 /home/vyadav/C/Workspace/SedgewickAlgorithms_MST/dfs.h
 
-1417371132 source:/home/vyadav/C/Workspace/SedgewickAlgorithms_MST/dijkstra.c
+1417444264 source:/home/vyadav/C/Workspace/SedgewickAlgorithms_MST/dijkstra.c
 	<stdio.h>
 	<stdlib.h>
 	<limits.h>
 	"min_binary_heap.h"
 	"graph.h"
 	"dijkstra.h"
+	"queue.h"
 
-1417105604 /home/vyadav/C/Workspace/SedgewickAlgorithms_MST/min_binary_heap.h
+1417443930 /home/vyadav/C/Workspace/SedgewickAlgorithms_MST/min_binary_heap.h
 
-1417353236 /home/vyadav/C/Workspace/SedgewickAlgorithms_MST/dijkstra.h
+1417443849 /home/vyadav/C/Workspace/SedgewickAlgorithms_MST/dijkstra.h
 
 1417363330 source:/home/vyadav/C/Workspace/SedgewickAlgorithms_MST/min_binary_heap.c
 	<stdio.h>
 	<stdlib.h>
 	<limits.h>
 	"min_binary_heap.h"
+
+1417443374 /home/vyadav/C/Workspace/SedgewickAlgorithms_MST/queue.h
+
+1417443327 source:/home/vyadav/C/Workspace/SedgewickAlgorithms_MST/queue.c
+	<stdio.h>
+	<stdlib.h>
+	<limits.h>
+	"queue.h"
 

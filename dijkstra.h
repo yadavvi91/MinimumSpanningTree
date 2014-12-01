@@ -31,7 +31,7 @@
  * After initialization, we have v.pi = NIL for all (v belonging to V), s.d = 0 and v.d = infinity
  * for (v belonging to V-{s}).
  *
- * The process of 'relaxing' an edge (u, v) consists of testign whether we can improve the shortest
+ * The process of 'relaxing' an edge (u, v) consists of testing whether we can improve the shortest
  * path to 'v' found so far by going through 'u' and, if so, updating 'v.d' and 'v.pi'.
  * A relaxation step may decrease the value of the shortest-path estimate 'v.d' and update "v's"
  * predecessor attribute 'v.pi'. The following code performs a relaxation step on edge (u, v) in
@@ -44,9 +44,14 @@
  */
 
 
-void create_dijkstra_path(int start_vertex, adj_list *adjacency_list, float dist_to[], int edge_to[]);
 void print_shortest_path(FILE *output, int start_vertex, adj_list *adjacency_list);
 void relax(node *node_of_vertex, float dist_to[], int edge_to[], int *size_of_heap, int pq[], float keys[]);
+void create_dijkstra_path(int start_vertex, adj_list *adjacency_list, float dist_to[], int edge_to[]);
+
+void minimum_spanning_tree(adj_list *adjacency_list);
+void relax_min_span_tree(node *node_of_vertex, float node_key[], int node_parent[], int *size_of_heap, int pq[], float keys[]);
+void create_minimum_span_tree(int start_vertex, adj_list *adjacency_list, float node_key[], int node_parent[]);
+void create_minimum_span_tree_queue(adj_list *adjacency_list, float node_key[], int node_parent[]);
 
 #endif // DIJKSTRA_H_INCLUDED
 

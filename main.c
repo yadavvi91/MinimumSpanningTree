@@ -6,13 +6,14 @@
 #include "graph.h"
 #include "stack.h"
 #include "dfs.h"
+#include "dijkstra.h"
+#include "queue.h"
 
 /** \brief Main function to check if the graph has a cycle.
  *
  * \param argc int - Number of command line arguments.
  * \param argv[] char* - Command line arguments.
  * \return int - EXIT_SUCCESS if successful, EXIT_FAILURE if call fails.
- *
  */
 int main(int argc, char* argv[])
 {
@@ -91,10 +92,10 @@ int main(int argc, char* argv[])
         }
     }
 
-    perform_dfs(output, adjacency_list);
-    find_a_cycle(output, adjacency_list);
+    // perform_dfs(output, adjacency_list);
+    // find_a_cycle(output, adjacency_list);
 
-    // print_shortest_path(adjacency_list);
+    // print_shortest_path(output, 0, adjacency_list);
     minimum_spanning_tree(adjacency_list);
 
     graph_destroy(adjacency_list);

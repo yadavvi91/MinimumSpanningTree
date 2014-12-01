@@ -53,6 +53,10 @@
 		</Unit>
 		<Unit filename="min_binary_heap.h" />
 		<Unit filename="output.txt" />
+		<Unit filename="queue.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="queue.h" />
 		<Unit filename="stack.c">
 			<Option compilerVar="CC" />
 		</Unit>

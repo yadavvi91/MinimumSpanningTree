@@ -66,7 +66,6 @@ int delete_min(int *size, int pq[], float keys[])
  * \param
  * \param
  * \return
- *
  */
 void sink(int k, int *size, int pq[], float keys[])
 {

@@ -5,6 +5,7 @@
 #include "min_binary_heap.h"
 #include "graph.h"
 #include "dijkstra.h"
+#include "queue.h"
 
 void print_shortest_path(FILE *output, int start_vertex, adj_list *adjacency_list)
 {
@@ -75,6 +76,11 @@ void create_dijkstra_path(int start_vertex, adj_list *adjacency_list, float dist
     }
 }
 
+/** \brief Create and print a minimum spanning tree.
+ *
+ * \param adjacency_list adj_list* - The Adjacency list of the graph.
+ * \return void
+ */
 void minimum_spanning_tree(adj_list *adjacency_list)
 {
     int pq[NMAX + 1];
@@ -89,7 +95,6 @@ void minimum_spanning_tree(adj_list *adjacency_list)
         node_parent[i] = -1;
         insert(i, &size_of_heap, node_key[i], pq, keys);
     }
-
 
     int start_vertex = 0;
 
@@ -107,9 +112,20 @@ void minimum_spanning_tree(adj_list *adjacency_list)
         }
     }
 
-    create_minimum_span_tree(start_vertex, adjacency_list, node_key, node_parent);
+    // create_minimum_span_tree(start_vertex, adjacency_list, node_key, node_parent);
+    create_minimum_span_tree_queue(adjacency_list, node_key, node_parent);
 }
 
+/** \brief Relax an edge in the minimum spanning tree.
+ *
+ * \param node_of_vertex node* - The actual edge.
+ * \param node_key[] float - Length of all the edges in the graph.
+ * \param node_parent[] int - Parents of vertices in an edge.
+ * \param size_of_heap int*
+ * \param pq[] int
+ * \param keys[] float
+ * \return void
+ */
 void relax_min_span_tree(node *node_of_vertex, float node_key[], int node_parent[], int *size_of_heap, int pq[], float keys[])
 {
     int from, to;
@@ -141,10 +157,37 @@ void create_minimum_span_tree(int start_vertex, adj_list *adjacency_list, float 
         }
         fprintf(stdout, "%5d\n", vertex);
     }
-
 }
 
+/** \brief Create and print the minimum spanning tree.
+ *
+ * \param adjacency_list adj_list* - The Adjacency list of the graph.
+ * \param node_key[] float - length of edges in the minimum spanning tree.
+ * \param node_parent[] int - parents of a node in a given edge.
+ * \return void
+ */
+void create_minimum_span_tree_queue(adj_list *adjacency_list, float node_key[], int node_parent[])
+{
+    queue *queue_inst = queue_create();
 
+    for (int i = 0; i < adjacency_list->no_vert; i++) {
+        edge *edge_inst = (edge *) malloc(sizeof(edge));
+        edge_inst->from = node_parent[i];
+        edge_inst->to = i;
+        edge_inst->weight = node_key[i];
+
+        queue_add(queue_inst, edge_inst);
+    }
+
+    fprintf(stdout, "The minimum spanning tree: \n");
+    while (!queue_is_empty(queue_inst)) {
+        edge *edge_inst = queue_remove(queue_inst);
+        fprintf(stdout, "%2d ->%2d == %.2f\n", edge_inst->from, edge_inst->to, edge_inst->weight);
+        free(edge_inst);
+    }
+
+    queue_destroy(queue_inst);
+}
 
 
 
