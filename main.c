@@ -99,6 +99,8 @@ int main(int argc, char* argv[])
     minimum_spanning_tree(adjacency_list);
 
     graph_destroy(adjacency_list);
+    fclose(input);
+    fclose(output);
     return EXIT_SUCCESS;
 }
 

@@ -60,7 +60,7 @@ void graph_add_edge(adj_list *adjacency_list, int from, int to, float weight)
 
     prev_node = bag_of_vertex->first;
     // assert(prev_node->to != to);
-    while (prev_node->next) {
+    while (prev_node->next != NULL) {
         prev_node = prev_node->next;
         // assert(prev_node->to != to);
     }
@@ -82,7 +82,7 @@ void graph_destroy(adj_list *adjacency_list)
         if (!bag_of_vertex)                 continue;
 
         node_of_vertex = bag_of_vertex->first;
-        while (node_of_vertex) {
+        while (node_of_vertex != NULL) {
             node_of_vertex_temp = node_of_vertex;
             node_of_vertex = node_of_vertex->next;
             free(node_of_vertex_temp);

@@ -12,7 +12,7 @@
  */
 void perform_dfs(FILE *output, adj_list *adjacency_list)
 {
-    int vertex = 0, no_of_vertex_left;
+    int no_of_vertex_left;
     boolean marked[NMAX] = {FALSE};
     stack *stack_inst = stack_create();
     int connected_graph[NMAX][2];

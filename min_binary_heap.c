@@ -127,7 +127,7 @@ boolean decrease_key(int i, int *size, float key, int pq[], float keys[])
 {
     if (i < 0 || i > NMAX)              return FALSE;
     keys[i] = key;
-    swim(i, pq, keys);
+    swim(i, pq, keys);  // swim(pq[i], pq, keys) also works, no idea why.
     return TRUE;
 }
 

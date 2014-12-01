@@ -89,6 +89,7 @@ void minimum_spanning_tree(adj_list *adjacency_list)
 
     float node_key[NMAX];
     int node_parent[NMAX];
+    boolean marked[NMAX] = { FALSE };
 
     for (int i = 0; i < adjacency_list->no_vert; i++) {
         node_key[i] = INT_MAX;
@@ -104,10 +105,12 @@ void minimum_spanning_tree(adj_list *adjacency_list)
 
     while (size_of_heap > 0) {
         int vertex = delete_min(&size_of_heap, pq, keys);
+        marked[vertex] = TRUE;  // Why marked? Because once an element is deleted
+                                // from a queue it is marked i.e. is already included.
         bag *bag_of_vertex = adjacency_list->bags[vertex];
         node *node_of_vertex = bag_of_vertex->first;
-        while (node_of_vertex) {
-            relax_min_span_tree(node_of_vertex, node_key, node_parent, &size_of_heap, pq, keys);
+        while (node_of_vertex != NULL) {
+            relax_min_span_tree(node_of_vertex, node_key, node_parent, &size_of_heap, pq, keys, marked);
             node_of_vertex = node_of_vertex->next;
         }
     }
@@ -126,11 +129,13 @@ void minimum_spanning_tree(adj_list *adjacency_list)
  * \param keys[] float
  * \return void
  */
-void relax_min_span_tree(node *node_of_vertex, float node_key[], int node_parent[], int *size_of_heap, int pq[], float keys[])
+void relax_min_span_tree(node *node_of_vertex, float node_key[], int node_parent[], int *size_of_heap, int pq[], float keys[], boolean marked[])
 {
     int from, to;
     from = node_of_vertex->from;
     to = node_of_vertex->to;
+    if (marked[to] == TRUE)
+        return;
 
     if (node_of_vertex->weight < node_key[to]) {
         node_key[to] = node_of_vertex->weight;

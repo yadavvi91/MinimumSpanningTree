@@ -41,6 +41,13 @@
  *      if v.d > u.d + w(u, v)
  *          v.d = u.d + w(u, v)
  *          v.pi = w
+ *
+ *
+ * It may seem strange that the term "relaxation" is used for an operation that tightens an upper bound.
+ * The use of the term is historical. The outcome of a relaxation step can be viewed as a relaxation of
+ * the constraint v.d <= u.d + w(u, v), which, by the triangle inequality, must be satisfied if
+ * u.d = delta(s, u) and v.d = delta(s, v). That is, if v.d <= u.d + w(u, v) there is no "pressure"
+ * to satisfy this constraint, so that constraint is "relaxed".
  */
 
 
@@ -49,7 +56,7 @@ void relax(node *node_of_vertex, float dist_to[], int edge_to[], int *size_of_he
 void create_dijkstra_path(int start_vertex, adj_list *adjacency_list, float dist_to[], int edge_to[]);
 
 void minimum_spanning_tree(adj_list *adjacency_list);
-void relax_min_span_tree(node *node_of_vertex, float node_key[], int node_parent[], int *size_of_heap, int pq[], float keys[]);
+void relax_min_span_tree(node *node_of_vertex, float node_key[], int node_parent[], int *size_of_heap, int pq[], float keys[], boolean marked[]);
 void create_minimum_span_tree(int start_vertex, adj_list *adjacency_list, float node_key[], int node_parent[]);
 void create_minimum_span_tree_queue(adj_list *adjacency_list, float node_key[], int node_parent[]);
 
